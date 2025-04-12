@@ -7,7 +7,7 @@ using namespace std;
 class CDetail {
 public:
     CDetail();
-//    int m_worker;
+    ~CDetail();
     bool m_detailBrak;
     int m_numWorker;
 };
@@ -15,6 +15,7 @@ public:
 class CWorker {
 public:
      CWorker(float,float,int);
+     ~CWorker();
      CDetail m_detail;
     CDetail randomBrak();
     float m_veroyatnostBraka;
@@ -30,6 +31,8 @@ int main(int argc, char* argv[])
     CWorker FirstWorker(0.9,800,1);
     CWorker SecondWorker(0.5,600,2);
     CWorker ThirdWorker(0.2,900,3);
+//  cout<<"   "<<ThirdWorker.m_detail.m_numWorker;
+ cout<< SecondWorker.randomBrak().m_numWorker;
       vector<CDetail> Korob;
       int i=0;
       while(i<800){
@@ -78,6 +81,13 @@ int main(int argc, char* argv[])
 }
 /////////////////////////////////////////////////////////////////////////////////////////
 CDetail::CDetail(){};
+CDetail::~CDetail(){
+ // cout<<"Объект удален";
+ };
+CWorker::~CWorker(){
+// cout<<"Объект удален";
+ };
+////////////////////////////////////
 ///////////////////////////////////
 CWorker::CWorker(float veroyatnost, float kolVo, int nameWorker){
  m_veroyatnostBraka=veroyatnost;
