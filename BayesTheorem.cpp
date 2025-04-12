@@ -30,8 +30,6 @@ int main(int argc, char* argv[])
     CWorker FirstWorker(0.9,800,1);
     CWorker SecondWorker(0.5,600,2);
     CWorker ThirdWorker(0.2,900,3);
-//  cout<<"   "<<ThirdWorker.m_detail.m_numWorker;
- cout<< SecondWorker.randomBrak().m_numWorker;
       vector<CDetail> Korob;
       int i=0;
       while(i<800){
