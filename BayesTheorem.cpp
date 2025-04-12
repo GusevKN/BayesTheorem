@@ -14,7 +14,6 @@ public:
 ////////////////////////////////////
 class CWorker {
 public:
-     CWorker();
      CWorker(float,float,int);
      CDetail m_detail;
     CDetail randomBrak();
