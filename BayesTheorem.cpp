@@ -28,8 +28,6 @@ public:
 int main(int argc, char* argv[])
 {
   srand(time(NULL));
-    vector<CWorker> w3;
-    vector<CWorker> w123;
     CWorker FirstWorker(0.9,800,1);
     CWorker SecondWorker(0.5,600,2);
     CWorker ThirdWorker(0.2,900,3);
